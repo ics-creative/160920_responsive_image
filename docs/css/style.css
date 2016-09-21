@@ -1,0 +1,26 @@
+/* base style */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+/* .containerは画面幅100%だが、最大1280pxまで広がる。 */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 画像は親の横幅100%。 */
+.container img {
+  /*width: 100%;*/
+}
