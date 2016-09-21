@@ -22,5 +22,5 @@ body {
 
 /* 画像は親の横幅100%。 */
 .container img {
-  /*width: 100%;*/
+  width: 100%;
 }
