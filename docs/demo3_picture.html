@@ -1,26 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <title>レスポンシブイメージ デモ3 : picture</title>
-</head>
-<body>
-<div class="container">
-  <picture>
-    <source media="(max-width:520px)"
-            srcset="images/cropped.jpg 640w"
-            sizes="100vw">
-    <source srcset="images/medium.jpg 640w,
-                  images/large.jpg 1280w"
-            sizes="(max-width:1280px) 100vw,
-                    1280px">
-    <img src="images/large.jpg"
-         alt="">
-  </picture>
-</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>レスポンシブイメージ デモ3 : picture</title>
+  </head>
+  <body>
+    <div class="container">
+      <picture>
+        <source
+          media="(max-width:520px)"
+          srcset="images/cropped.jpg 640w"
+          sizes="100vw"
+        />
+        <source
+          srcset="images/medium.jpg 640w, images/large.jpg 1280w"
+          sizes="(max-width:1280px) 100vw,
+                    1280px"
+        />
+        <img src="images/large.jpg" alt="" />
+      </picture>
+    </div>
+  </body>
 </html>

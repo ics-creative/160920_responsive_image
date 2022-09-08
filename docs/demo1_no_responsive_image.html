@@ -1,52 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>レスポンシブイメージ デモ1：CSSで画像出しわけ</title>
-  <style>
-    #wrapper {
-      width: 100%;
-      position: relative;
-    }
-
-    #wrapper:before {
-      content: "";
-      display: block;
-      padding-top: 40%;
-    }
-
-    #mainVisual {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background-size: cover;
-    }
-
-    #mainVisual {
-      background-image: url("images/large.jpg");
-    }
-
-    @media (max-width: 1279px) {
-      #mainVisual {
-        background-image: url("images/medium.jpg");
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>レスポンシブイメージ デモ1：CSSで画像出しわけ</title>
+    <style>
+      #wrapper {
+        width: 100%;
+        position: relative;
       }
-    }
 
-    @media (max-width: 639px) {
-      #mainVisual {
-        background-image: url("images/small.jpg");
+      #wrapper:before {
+        content: "";
+        display: block;
+        padding-top: 40%;
       }
-    }
-  </style>
-</head>
-<body>
-<div id="wrapper">
-  <div id="mainVisual"></div>
-</div>
-</body>
+
+      #mainVisual {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-size: cover;
+      }
+
+      #mainVisual {
+        background-image: url("images/large.jpg");
+      }
+
+      @media (max-width: 1279px) {
+        #mainVisual {
+          background-image: url("images/medium.jpg");
+        }
+      }
+
+      @media (max-width: 639px) {
+        #mainVisual {
+          background-image: url("images/small.jpg");
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="mainVisual"></div>
+    </div>
+  </body>
 </html>
